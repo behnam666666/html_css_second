@@ -1,0 +1,174 @@
+@media (max-width: 575.98px) { }
+
+
+@media (max-width: 767.98px) { 
+
+    footer{
+        flex-direction: column;
+        
+    }
+
+    .footer-left{
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    .footer-right{
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+ }
+
+
+@media (max-width: 991.98px) {
+
+
+   
+    .app-h{
+        height: 380px;
+        transition: .3s;
+    }
+
+    .app-h2{
+        height: 440px;
+        transition: .3s;
+    }
+    
+
+    .head-icon-bars{
+        display: flex;
+        background-color: rgb(30, 198, 182);
+        color: black!important;
+        width: 70px;
+        top: 15px;
+        bottom: 15px;
+        right: -25px;
+        display: flex;
+        justify-content: center;
+        align-items:  center;
+        cursor: pointer;
+        z-index: 10;
+        border-radius: 0px;
+        transition: .3s;
+    }
+
+    .head-icon-search{
+        right:-100%;
+        width: 136px;
+        height: 61px;
+        top: 77px;
+    }
+    .head-search{
+        right:-100%;
+        width: 136px;
+        height: 55px;
+        top: 77px;
+    }
+
+    .head-nav-ul li{
+        display: block;
+        margin-top: 20px;
+    }
+
+    .head-nav{
+        position: absolute;
+        top: 77px;
+        right: -100%;
+        background-color: rgba(30, 198, 182,0.4);
+        width: 180px;
+        padding-left: 50px;
+        padding-top: 50px;
+        padding-bottom: 10px;
+    }
+
+    .head-bars-width{
+        width: 140px;
+        transition: .3s;
+    }
+    .head-sear-right{
+        right:-21px;
+        transition: .3s;
+    }
+
+
+    .nav-right{
+        right: -65px;
+    }
+
+    .ser-hie{
+        top: 140px;
+        border-radius: 5px;
+    }
+    .p-100{
+        padding-top:110px;
+    }
+
+
+
+
+    .main-form{
+        flex-direction: column;
+    }
+    .main-form form{ 
+        flex-direction: column;
+    }
+
+    .main-form form input{ 
+        margin: 10px 0;
+    }
+    
+ }
+
+
+
+
+@media (max-width: 1199.98px) {
+
+
+    .main-email-form{
+        flex-direction: column;
+    }
+
+    .form-email{
+        flex-direction: column;
+    }
+
+    .form-email input{
+        margin: 20px 0;
+    }
+
+    
+  }
+
+
+@media (max-width: 1399.98px) {
+    .width-hover-search{
+        width: 200px;
+        border-radius: 5px;
+    
+    }
+
+    .head-nav-ul{
+        margin-left: -40px;
+    }
+
+ }
+
+
+
+
+ @media (min-width: 991.98px) {
+    .ser-hie{
+        width: 200px;
+        border-radius: 5px;
+    }
+
+ }
+
+ @media (min-width: 1400px) {
+    .ser-hie{
+        width: 300px;
+        border-radius: 5px;
+    }
+
+ }

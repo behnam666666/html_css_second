@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="app" id="app-id">
+        <header class="head d-flex p-rel">
+            <img src="./images/logo.png" alt="">
+
+            <nav class="head-nav p-rel" id="head-nav-id">
+                <ul class="head-nav-ul">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Destination</a></li>
+                    <li><a href="">Pages</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="head-icon">
+                <a class="head-icon-search p-abs"  onclick="searchwidth()" id="head-icon-sear">
+                    <i class="fa-search icon"></i>
+                </a>
+                <input type="text" placeholder="search" class="head-search p-abs" id="head-sear">
+                
+                
+                <a class="head-icon-bars p-abs d-none"  onclick="barswidth()" id="head-bars-id">
+                    <i class="fa-bars icon"></i>
+                </a>
+                
+            </div>
+
+            
+        </header>
+ 
+    </section>
+
+
+    <main>
+        <section class="main">
+            <section class="main-content">
+                <h2>Australia</h2>
+                <p>Pixel perfect design with awesome contents</p>
+                <a href="#">Explore Now</a>
+    
+            </section>
+        </section>
+
+        <section class="main-form">
+            <p>Where you want to go?</p>
+            <form action="#" >
+                <input type="text" placeholder="Where to go?">
+                <input type="text" placeholder="Where to go?">
+                <input type="text" placeholder="Where to go?">
+                <button>search</button>
+            </form>
+        </section>
+
+
+
+        <section class="main-container">
+            <section class="container-head">
+                <h3>Popular Destination</h3>
+                <p>Suffered alteration in some form, by injected humour or good day randomised booth anim 8-bit hella wolf moon beard words.</p>
+            </section>
+
+
+
+            <section class="main-container-mid">
+                <article class="main-art art-img1">
+                    <section class="artc-containr">
+                        <h3>Italy</h3>
+                        <p>07 places</p>
+                    </section>
+                </article>
+    
+                <article class="main-art art-img2">
+                    <section class="artc-containr">
+                        <h3>Italy</h3>
+                        <p>07 places</p>
+                    </section>
+                </article>
+    
+                <article class="main-art art-img3">
+                    <section class="artc-containr">
+                        <h3>Italy</h3>
+                        <p>07 places</p>
+                    </section>
+                </article>
+    
+                <article class="main-art art-img4">
+                    <section class="artc-containr">
+                        <h3>Italy</h3>
+                        <p>07 places</p>
+                    </section>
+                </article>
+    
+                <article class="main-art art-img5">
+                    <section class="artc-containr">
+                        <h3>Italy</h3>
+                        <p>07 places</p>
+                    </section>
+                </article>
+    
+                <article class="main-art art-img6">
+                    <section class="artc-containr">
+                        <h3>Italy</h3>
+                        <p>07 places</p>
+                    </section>
+                </article>
+
+
+            </section>
+
+            
+        </section>
+
+
+
+        <section class="main-email">
+
+            <section class="main-email-form">
+                <section class="main-email-form-p">
+                    <h4>Subscribe Our Newsletter</h4>
+                    <p>Subscribe newsletter to get offers and about new places to discover.</p>
+                </section>
+
+                <form action="#" class="form-email">
+                    <input type="email" placeholder="Your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+
+            </section>
+
+        </section>
+
+
+        <section class="main-video">
+            <h3>Enjoy Video</h3>
+            <div>
+                <a href="#"><i class="icon fa-play"></i></a>
+            </div>
+        </section>
+
+
+    </main>
+
+
+
+    <footer>
+        <section class="footer-left">
+            <img src="./images/footer_logo.png" alt="">
+            <ul>
+                <li>lane New York-1782</li>
+                <li>+10 367 826 2567</li>
+                <li>contact@carpenter.com</li>
+            </ul>
+        </section>
+        <section class="footer-right">
+            <h3>Popular destination</h3>
+            <ul>
+                <li>Indonesia</li>
+                <li>India</li>
+                <li>Italy</li>
+                <li>Franch</li>
+                <li>America</li>
+                <li>Switzerland</li>
+                <li>Canada</li>
+                <li>England</li>
+            </ul>
+
+        </section>
+
+    </footer>
+    
+    
+</body>
+
+
+
+<script>
+    function searchwidth(){
+        var sear = document.getElementById("head-sear");
+        var iconsear = document.getElementById("head-icon-sear");
+        var na = document.getElementById("head-nav-id");
+        var app = document.getElementById("app-id");
+        
+        if(sear.className === "head-search p-abs")
+        {
+            sear.className += " width-hover-search";
+            iconsear.className += " p-abs border-r";
+        }
+        else if(sear.className ==="head-search p-abs width-hover-search")
+        {
+            sear.className = "head-search p-abs";
+            iconsear.className = "head-icon-search p-abs";
+
+        }
+        else if(sear.className === "head-search p-abs head-sear-right")
+        {
+            sear.className += " ser-hie";
+            na.className+=" p-100";
+            app.className="app app-h2";
+        }
+        else{
+            sear.className = "head-search p-abs head-sear-right";
+            iconsear.className = "head-icon-search p-abs head-sear-right";
+            na.className="head-nav p-rel  nav-right";
+            app.className="app app-h";
+        }
+
+
+    }
+
+
+    function barswidth(){
+        var bars = document.getElementById("head-bars-id")
+        var sea = document.getElementById("head-sear");
+        var iconsea = document.getElementById("head-icon-sear");
+        var na = document.getElementById("head-nav-id");
+
+        var app = document.getElementById("app-id");
+
+
+        if(bars.className==="head-icon-bars p-abs d-none")
+        {
+            bars.className +=" head-bars-width";
+            sea.className += " head-sear-right";
+            iconsea.className += " head-sear-right";
+            bars.style.transition=".3s";
+            na.className+=" nav-right";
+            na.style.transition=".3s";
+            app.className+=" app-h"
+
+        }
+        else{
+            bars.className="head-icon-bars p-abs d-none";
+            sea.className = "head-search p-abs";
+            iconsea.className = "head-icon-search p-abs";
+            bars.style.transition=".3s";
+            na.style.transition=".3s";
+            na.className="head-nav p-rel";
+            app.className+="app"
+        }
+    }
+
+
+</script>
+</html>
